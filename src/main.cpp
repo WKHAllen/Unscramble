@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
         cout << "usage: unscramble <word> [-d dictionary-file]" << endl;
         return 1;
     }
-    string dictpath = "./dict/american-english";
+    string dictpath = "dict/american-english";
     string word = "";
     for (int i = 1; i < argc; i++) {
         if (((string)argv[i] == "-d" || (string)argv[i] == "--dict") && i != argc - 1) {
